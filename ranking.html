@@ -3,15 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best IPTV Providers Ranking 2026 | Compare Top IPTV Services</title>
-  <meta name="description" content="Compare the best IPTV providers with detailed reviews, pricing, supported devices, streaming quality, channel counts and features.">
+  <title>IPTV Providers Directory 2026 | Professional Streaming Services Comparison</title>
+  <meta name="description" content="Comprehensive IPTV provider directory featuring detailed service comparisons, streaming quality analysis, device compatibility, and professional reviews.">
+  <meta name="keywords" content="IPTV, Streaming Services, Live TV, VOD, IPTV Providers, IPTV Reviews">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ==================== RESET & BASE ==================== */
-    * {
+    /* ============================================
+       ROOT VARIABLES & DESIGN SYSTEM
+    ============================================ */
+    :root {
+      --primary-50: #eff6ff;
+      --primary-100: #dbeafe;
+      --primary-200: #bfdbfe;
+      --primary-300: #93c5fd;
+      --primary-400: #60a5fa;
+      --primary-500: #3b82f6;
+      --primary-600: #2563eb;
+      --primary-700: #1d4ed8;
+
+      --accent-400: #22d3ee;
+      --accent-500: #06b6d4;
+      --accent-600: #0891b2;
+
+      --emerald-400: #34d399;
+      --emerald-500: #10b981;
+      --emerald-600: #059669;
+
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --slate-950: #020617;
+
+      --bg-primary: #030712;
+      --bg-secondary: #0a0f1a;
+      --bg-tertiary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.8);
+      --bg-elevated: rgba(30, 41, 59, 0.6);
+
+      --border-primary: rgba(148, 163, 184, 0.1);
+      --border-secondary: rgba(148, 163, 184, 0.15);
+      --border-accent: rgba(34, 211, 238, 0.3);
+
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-tertiary: #94a3b8;
+      --text-muted: #64748b;
+
+      --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+      --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+      --gradient-dark: linear-gradient(180deg, #0a0f1a 0%, #030712 100%);
+      --gradient-glow: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      --radius-full: 9999px;
+
+      --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ============================================
+       RESET & BASE STYLES
+    ============================================ */
+    *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -19,35 +92,94 @@
 
     html {
       scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     body {
-      font-family: 'Poppins', system-ui, sans-serif;
-      background: linear-gradient(to bottom, #0a0f24, #050714);
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 1.5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg-primary);
+      background-image: var(--gradient-glow), var(--gradient-dark);
+      color: var(--text-primary);
+      font-size: 15px;
+      line-height: 1.6;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     a {
       text-decoration: none;
       color: inherit;
+      transition: color var(--transition-fast);
     }
 
-    /* ==================== CONTAINER ==================== */
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    input, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+    ============================================ */
+    .heading-display {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .text-gradient {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================
+       LAYOUT
+    ============================================ */
     .container {
       width: 100%;
-      max-width: 1400px;
+      max-width: 1440px;
       margin: 0 auto;
-      padding: 0 16px;
+      padding: 0 clamp(16px, 4vw, 40px);
     }
 
-    /* ==================== HERO SECTION ==================== */
+    .section {
+      padding: clamp(24px, 5vw, 48px) 0;
+    }
+
+    /* ============================================
+       HERO SECTION
+    ============================================ */
     .hero {
-      padding: 20px 0;
-      background: radial-gradient(circle at top, rgba(0,212,255,0.12), transparent 50%);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 32px 0 24px;
+      background: var(--gradient-glow);
+      border-bottom: 1px solid var(--border-primary);
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
     }
 
     .hero-content {
@@ -55,348 +187,463 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 20px;
+      position: relative;
     }
 
     .hero-text h1 {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1.2;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+      margin-bottom: 8px;
     }
 
-    .hero-text h1 span {
-      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-text p {
-      color: #94a3b8;
-      font-size: 12px;
-      margin-top: 4px;
+    .hero-text .subtitle {
+      color: var(--text-tertiary);
+      font-size: clamp(13px, 1.5vw, 15px);
+      max-width: 480px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 12px;
       align-items: center;
     }
 
-    /* ==================== SEARCH BOX ==================== */
-    .search-box {
+    /* ============================================
+       SEARCH COMPONENT
+    ============================================ */
+    .search-wrapper {
       position: relative;
     }
 
-    .search-box input {
-      padding: 8px 12px 8px 32px;
-      border-radius: 8px;
-      background: rgba(30, 41, 59, 0.5);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 12px;
-      width: 200px;
+    .search-input {
+      width: 260px;
+      padding: 12px 16px 12px 44px;
+      border-radius: var(--radius-lg);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-primary);
+      color: var(--text-primary);
+      font-size: 14px;
       outline: none;
-      transition: border-color 0.3s;
+      transition: all var(--transition-normal);
     }
 
-    .search-box input:focus {
-      border-color: rgba(0,212,255,0.5);
+    .search-input:hover {
+      border-color: var(--border-secondary);
     }
 
-    .search-box input::placeholder {
-      color: #64748b;
+    .search-input:focus {
+      border-color: var(--accent-400);
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
     }
 
     .search-icon {
       position: absolute;
-      left: 10px;
+      left: 14px;
       top: 50%;
       transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      color: #64748b;
+      width: 18px;
+      height: 18px;
+      color: var(--text-muted);
+      pointer-events: none;
     }
 
-    /* ==================== BUTTONS ==================== */
+    /* ============================================
+       BUTTON SYSTEM
+    ============================================ */
     .btn {
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--radius-lg);
+      font-size: 14px;
+      font-weight: 600;
+      transition: all var(--transition-normal);
+      white-space: nowrap;
     }
 
     .btn-primary {
-      background: linear-gradient(90deg, #10b981, #0d9488);
-      color: #fff;
+      background: var(--gradient-accent);
+      color: var(--bg-primary);
+      box-shadow: 0 4px 14px rgba(34, 211, 238, 0.25);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+      box-shadow: 0 6px 20px rgba(34, 211, 238, 0.35);
     }
 
-    .btn-gradient {
-      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
-      color: #fff;
+    .btn-primary:active {
+      transform: translateY(0);
     }
 
-    .btn-gradient:hover {
+    .btn-secondary {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+    }
+
+    .btn-secondary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
     }
 
-    /* ==================== FEATURES BAR ==================== */
-    .features-bar {
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--border-secondary);
+      color: var(--text-secondary);
     }
 
-    .features-list {
+    .btn-ghost:hover {
+      background: var(--bg-elevated);
+      border-color: var(--border-accent);
+      color: var(--text-primary);
+    }
+
+    .btn-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    /* ============================================
+       FEATURES STRIP
+    ============================================ */
+    .features-strip {
+      padding: 16px 0;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-primary);
+    }
+
+    .features-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 24px;
+      gap: clamp(24px, 4vw, 48px);
     }
 
     .feature-item {
       display: flex;
       align-items: center;
-      gap: 8px;
-      color: #cbd5e1;
-      font-size: 12px;
+      gap: 10px;
+      color: var(--text-tertiary);
+      font-size: 13px;
       font-weight: 500;
     }
 
-    .feature-item svg {
-      width: 16px;
-      height: 16px;
-      color: #00d4ff;
+    .feature-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--accent-400);
     }
 
-    /* ==================== MAIN LAYOUT ==================== */
-    .main-section {
-      padding: 16px 0;
-    }
-
-    .main-grid {
+    /* ============================================
+       MAIN CONTENT GRID
+    ============================================ */
+    .content-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 24px;
     }
 
-    @media (min-width: 1024px) {
-      .main-grid {
-        grid-template-columns: 2fr 1fr;
+    @media (min-width: 1100px) {
+      .content-grid {
+        grid-template-columns: 1fr 380px;
       }
     }
 
-    /* ==================== SECTION TITLE ==================== */
+    /* ============================================
+       SECTION HEADERS
+    ============================================ */
+    .section-header {
+      margin-bottom: 20px;
+    }
+
     .section-title {
-      font-size: 16px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(18px, 2.5vw, 22px);
       font-weight: 700;
-      margin-bottom: 12px;
+      color: var(--text-primary);
       display: flex;
       align-items: center;
-      gap: 8px;
-    }
-
-    .section-title .badge {
-      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 12px;
-      font-size: 10px;
-    }
-
-    /* ==================== PROVIDER CARDS ==================== */
-    .providers-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 12px;
     }
 
+    .section-badge {
+      background: var(--gradient-primary);
+      color: white;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      color: var(--text-tertiary);
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    /* ============================================
+       PROVIDER CARDS GRID
+    ============================================ */
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
     .provider-card {
-      background: rgba(30, 41, 59, 0.3);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      padding: 12px;
-      transition: all 0.3s ease;
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-xl);
+      padding: 20px;
+      transition: all var(--transition-normal);
       position: relative;
+      overflow: hidden;
+    }
+
+    .provider-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-primary);
+      opacity: 0;
+      transition: opacity var(--transition-normal);
     }
 
     .provider-card:hover {
-      border-color: rgba(0, 212, 255, 0.3);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      border-color: var(--border-accent);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-xl), var(--shadow-glow);
+    }
+
+    .provider-card:hover::before {
+      opacity: 1;
     }
 
     .provider-header {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
-    .provider-info {
+    .provider-identity {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
-    .rank-badge {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+    .rank-indicator {
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-full);
+      background: var(--gradient-primary);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      font-size: 11px;
+      font-size: 12px;
+      color: white;
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    }
+
+    .rank-indicator.top-3 {
+      background: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
     }
 
     .provider-name {
-      font-weight: 600;
-      font-size: 13px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text-primary);
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
     }
 
-    .provider-name .award {
-      color: #fbbf24;
-      width: 14px;
-      height: 14px;
+    .verified-badge {
+      color: #f59e0b;
+      width: 16px;
+      height: 16px;
     }
 
-    .tier-badge {
-      background: rgba(139, 92, 246, 0.2);
-      color: #c4b5fd;
-      padding: 2px 8px;
-      border-radius: 12px;
-      font-size: 10px;
+    .tier-label {
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .provider-description {
+      color: var(--text-tertiary);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .feature-chip {
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 11px;
       font-weight: 500;
     }
 
-    .provider-desc {
-      color: #94a3b8;
-      font-size: 11px;
-      margin-bottom: 8px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .provider-features {
+    .provider-footer {
       display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-bottom: 8px;
-    }
-
-    .feature-tag {
-      background: rgba(51, 65, 85, 0.5);
-      color: #cbd5e1;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 10px;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-primary);
     }
 
     .provider-link {
-      color: #00d4ff;
-      font-size: 11px;
+      color: var(--accent-400);
+      font-size: 13px;
+      font-weight: 500;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      transition: color 0.3s;
+      gap: 6px;
+      transition: color var(--transition-fast);
     }
 
     .provider-link:hover {
-      color: #22d3ee;
+      color: var(--accent-500);
     }
 
     .provider-link svg {
-      width: 12px;
-      height: 12px;
+      width: 14px;
+      height: 14px;
+      transition: transform var(--transition-fast);
     }
 
-    /* ==================== SIDEBAR ==================== */
+    .provider-link:hover svg {
+      transform: translateX(2px);
+    }
+
+    /* ============================================
+       SIDEBAR
+    ============================================ */
     .sidebar {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
     }
 
     .sidebar-card {
-      background: rgba(30, 41, 59, 0.3);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      padding: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-xl);
+      padding: 20px;
     }
 
     .sidebar-title {
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-primary);
     }
 
-    /* ==================== TABLE ==================== */
+    /* ============================================
+       COMPARISON TABLE
+    ============================================ */
     .comparison-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 11px;
+      font-size: 13px;
     }
 
     .comparison-table th {
-      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(139,92,246,0.2));
-      padding: 8px 6px;
       text-align: left;
       font-weight: 600;
+      color: var(--text-tertiary);
+      padding: 10px 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .comparison-table th:not(:first-child) {
+      text-align: center;
     }
 
     .comparison-table td {
-      padding: 6px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      color: #cbd5e1;
+      padding: 12px 8px;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border-primary);
     }
 
-    .comparison-table tr:last-child td {
-      border-bottom: none;
+    .comparison-table td:not(:first-child) {
+      text-align: center;
     }
 
-    .comparison-table tr:hover td {
-      background: rgba(255,255,255,0.02);
+    .comparison-table tbody tr {
+      transition: background var(--transition-fast);
     }
 
-    /* ==================== REVIEWS ==================== */
-    .review-item {
-      background: rgba(51, 65, 85, 0.2);
-      border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 8px;
+    .comparison-table tbody tr:hover {
+      background: var(--bg-elevated);
     }
 
-    .review-item:last-child {
+    .table-highlight {
+      color: var(--emerald-400);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       REVIEWS
+    ============================================ */
+    .review-card {
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .review-card:last-child {
       margin-bottom: 0;
     }
 
-    .review-stars {
+    .review-rating {
       display: flex;
-      gap: 2px;
-      margin-bottom: 4px;
+      gap: 3px;
+      margin-bottom: 8px;
     }
 
-    .review-stars svg {
-      width: 12px;
-      height: 12px;
+    .star-icon {
+      width: 14px;
+      height: 14px;
     }
 
     .star-filled {
@@ -405,136 +652,167 @@
     }
 
     .star-empty {
-      color: #475569;
+      color: var(--slate-600);
     }
 
-    .review-text {
-      font-size: 11px;
-      color: #cbd5e1;
-      margin-bottom: 4px;
+    .review-content {
+      color: var(--text-secondary);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 10px;
     }
 
     .review-author {
-      font-size: 10px;
-      color: #10b981;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-tertiary);
     }
 
-    /* ==================== FAQ ==================== */
+    .verified-text {
+      color: var(--emerald-500);
+      font-weight: 500;
+    }
+
+    /* ============================================
+       FAQ ACCORDION
+    ============================================ */
     .faq-item {
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      padding: 8px 0;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-primary);
     }
 
     .faq-item:last-child {
       border-bottom: none;
+      padding-bottom: 0;
     }
 
-    .faq-question {
+    .faq-trigger {
       width: 100%;
-      text-align: left;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 600;
-      cursor: pointer;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
       padding: 0;
-      transition: color 0.3s;
+      transition: color var(--transition-fast);
     }
 
-    .faq-question:hover {
-      color: #00d4ff;
+    .faq-trigger:hover {
+      color: var(--accent-400);
     }
 
-    .faq-question svg {
-      width: 14px;
-      height: 14px;
-      transition: transform 0.3s;
+    .faq-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--text-muted);
+      transition: transform var(--transition-normal);
     }
 
-    .faq-item.active .faq-question svg {
+    .faq-item.active .faq-icon {
       transform: rotate(180deg);
     }
 
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition-normal);
+    }
+
+    .faq-item.active .faq-content {
+      max-height: 200px;
+    }
+
     .faq-answer {
-      font-size: 11px;
-      color: #94a3b8;
-      padding-top: 6px;
-      display: none;
+      padding-top: 12px;
+      color: var(--text-tertiary);
+      font-size: 13px;
+      line-height: 1.6;
     }
 
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-
-    /* ==================== CTA ==================== */
+    /* ============================================
+       CTA SECTION
+    ============================================ */
     .cta-section {
-      padding: 16px 0;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 32px 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.03) 100%);
+      border-top: 1px solid var(--border-primary);
       text-align: center;
-      background: radial-gradient(circle at center, rgba(0,212,255,0.1), transparent 60%);
     }
 
     .cta-text {
-      color: #94a3b8;
-      font-size: 12px;
-      margin-bottom: 8px;
+      color: var(--text-tertiary);
+      font-size: 14px;
+      max-width: 500px;
+      margin: 0 auto 16px;
     }
 
-    /* ==================== MODAL ==================== */
-    .modal-overlay {
+    /* ============================================
+       MODAL SYSTEM
+    ============================================ */
+    .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(4px);
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 16px;
-      z-index: 1000;
-    }
-
-    .modal-overlay.active {
-      display: flex;
-    }
-
-    .modal {
-      background: #1e293b;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
       padding: 20px;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-container {
+      background: var(--slate-900);
+      border: 1px solid var(--border-secondary);
+      border-radius: var(--radius-xl);
+      padding: 28px;
       width: 100%;
-      max-width: 400px;
-      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+      max-width: 440px;
+      box-shadow: var(--shadow-xl);
+      transform: scale(0.95) translateY(10px);
+      transition: transform var(--transition-normal);
+    }
+
+    .modal-backdrop.active .modal-container {
+      transform: scale(1) translateY(0);
     }
 
     .modal-header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 16px;
+      justify-content: space-between;
+      margin-bottom: 24px;
     }
 
     .modal-title {
-      font-size: 16px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
       font-weight: 700;
     }
 
     .modal-close {
-      background: none;
-      border: none;
-      color: #94a3b8;
-      cursor: pointer;
-      padding: 4px;
-      border-radius: 6px;
-      transition: background 0.3s;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      transition: all var(--transition-fast);
     }
 
     .modal-close:hover {
-      background: rgba(255,255,255,0.1);
+      background: var(--bg-elevated);
+      color: var(--text-primary);
     }
 
     .modal-close svg {
@@ -542,69 +820,81 @@
       height: 20px;
     }
 
+    /* ============================================
+       FORM ELEMENTS
+    ============================================ */
     .form-group {
-      margin-bottom: 12px;
+      margin-bottom: 18px;
     }
 
     .form-label {
       display: block;
-      font-size: 12px;
-      font-weight: 500;
-      color: #cbd5e1;
-      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
     }
 
-    .form-input {
+    .form-label .label-hint {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .form-control {
       width: 100%;
-      padding: 10px 12px;
-      border-radius: 8px;
-      background: rgba(51, 65, 85, 0.5);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 12px;
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-primary);
+      color: var(--text-primary);
+      font-size: 14px;
       outline: none;
-      transition: border-color 0.3s;
+      transition: all var(--transition-fast);
     }
 
-    .form-input:focus {
-      border-color: #00d4ff;
+    .form-control:hover {
+      border-color: var(--border-secondary);
     }
 
-    .form-input::placeholder {
-      color: #64748b;
+    .form-control:focus {
+      border-color: var(--accent-400);
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
     }
 
-    textarea.form-input {
-      resize: none;
-      min-height: 60px;
+    .form-control::placeholder {
+      color: var(--text-muted);
     }
 
-    .modal-actions {
+    textarea.form-control {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .form-actions {
       display: flex;
-      gap: 8px;
-      margin-top: 16px;
+      gap: 12px;
+      margin-top: 28px;
     }
 
-    .modal-actions .btn {
+    .form-actions .btn {
       flex: 1;
-      justify-content: center;
     }
 
-    .btn-outline {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.2);
-      color: #cbd5e1;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.05);
-    }
-
-    /* ==================== RESPONSIVE ==================== */
-    @media (max-width: 640px) {
+    /* ============================================
+       RESPONSIVE BREAKPOINTS
+    ============================================ */
+    @media (max-width: 768px) {
       .hero-content {
         flex-direction: column;
         text-align: center;
+      }
+
+      .hero-text {
+        width: 100%;
+      }
+
+      .hero-text .subtitle {
+        margin: 0 auto;
       }
 
       .hero-actions {
@@ -612,12 +902,26 @@
         justify-content: center;
       }
 
-      .search-box input {
+      .search-input {
         width: 100%;
       }
 
       .providers-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .btn {
+        width: 100%;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .form-actions {
+        flex-direction: column;
       }
     }
   </style>
@@ -628,153 +932,169 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Find The <span>Best IPTV</span> Provider</h1>
-          <p>Compare premium IPTV providers - channels, VOD, quality, devices and pricing.</p>
+          <h1 class="heading-display">Find the <span class="text-gradient">Right IPTV</span> Provider</h1>
+          <p class="subtitle">Compare streaming services by channel availability, video quality, device compatibility, and customer support ratings.</p>
         </div>
         <div class="hero-actions">
-          <div class="search-box">
+          <div class="search-wrapper">
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="text" id="searchInput" placeholder="Search provider...">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search providers...">
           </div>
           <button class="btn btn-primary" onclick="openModal()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-            Add New
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            Add Listing
           </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Bar -->
-  <section class="features-bar">
+  <!-- Features Strip -->
+  <section class="features-strip">
     <div class="container">
-      <div class="features-list">
+      <div class="features-grid">
         <div class="feature-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
-          Live TV
+          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+          Live Television
         </div>
         <div class="feature-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M7 7h14"/></svg>
+          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M7 7h14"/></svg>
           Movies & Series
         </div>
         <div class="feature-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-          All Devices
+          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          Multi-Device Support
         </div>
         <div class="feature-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Fast Streaming
+          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          High-Speed Streaming
         </div>
       </div>
     </div>
   </section>
 
   <!-- Main Content -->
-  <section class="main-section">
+  <section class="section">
     <div class="container">
-      <div class="main-grid">
-        <!-- Providers List -->
+      <div class="content-grid">
+        <!-- Providers Column -->
         <div>
-          <h2 class="section-title">Top IPTV Providers <span class="badge">12 Listed</span></h2>
+          <div class="section-header">
+            <h2 class="section-title">
+              Streaming Providers
+              <span class="section-badge" id="providerCount">12 Listed</span>
+            </h2>
+            <p class="section-subtitle">Verified listings with updated service information</p>
+          </div>
           <div class="providers-grid" id="providersGrid">
-            <!-- Providers will be rendered here by JS -->
+            <!-- Dynamically rendered -->
           </div>
         </div>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- Comparison Table -->
+        <!-- Sidebar Column -->
+        <aside class="sidebar">
+          <!-- Quick Comparison -->
           <div class="sidebar-card">
-            <h3 class="sidebar-title">Quick Comparison</h3>
+            <h3 class="sidebar-title">Service Comparison</h3>
             <table class="comparison-table">
               <thead>
                 <tr>
                   <th>Provider</th>
-                  <th>CH</th>
+                  <th>Channels</th>
                   <th>4K</th>
                   <th>Support</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Tivi Live</td><td>18K+</td><td>Yes</td><td>24/7</td></tr>
-                <tr><td>Flash4K</td><td>20K+</td><td>Yes</td><td>24/7</td></tr>
-                <tr><td>Zorba Net</td><td>15K+</td><td>Yes</td><td>Ticket</td></tr>
-                <tr><td>FreeGoTV</td><td>12K+</td><td>HD</td><td>Email</td></tr>
+                <tr><td>Tivi Live</td><td>18,000+</td><td class="table-highlight">Yes</td><td>24/7</td></tr>
+                <tr><td>Flash4K</td><td>20,000+</td><td class="table-highlight">Yes</td><td>24/7</td></tr>
+                <tr><td>Zorba Network</td><td>15,000+</td><td class="table-highlight">Yes</td><td>Ticket</td></tr>
+                <tr><td>FreeGoTV</td><td>12,000+</td><td>HD</td><td>Email</td></tr>
               </tbody>
             </table>
           </div>
 
-          <!-- Reviews -->
+          <!-- User Reviews -->
           <div class="sidebar-card">
-            <h3 class="sidebar-title">User Reviews</h3>
-            <div class="review-item">
-              <div class="review-stars">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <h3 class="sidebar-title">Client Testimonials</h3>
+            <div class="review-card">
+              <div class="review-rating">
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-              <p class="review-text">Great streaming quality with large channel selection.</p>
-              <p class="review-author">Michael R. - Verified</p>
+              <p class="review-content">Exceptional streaming quality with comprehensive channel offerings. Setup was straightforward.</p>
+              <p class="review-author">Michael Rodriguez <span class="verified-text">Verified</span></p>
             </div>
-            <div class="review-item">
-              <div class="review-stars">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <div class="review-card">
+              <div class="review-rating">
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-              <p class="review-text">Easy setup, smooth viewing, responsive support.</p>
-              <p class="review-author">Sarah L. - Verified</p>
+              <p class="review-content">Seamless multi-device integration with responsive technical support. Highly recommended.</p>
+              <p class="review-author">Sarah Livingston <span class="verified-text">Verified</span></p>
             </div>
-            <div class="review-item">
-              <div class="review-stars">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <div class="review-card">
+              <div class="review-rating">
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon star-empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-              <p class="review-text">Wide channel availability and reliable performance.</p>
-              <p class="review-author">David M. - Verified</p>
+              <p class="review-content">Reliable performance with extensive sports coverage. Minor buffering during peak hours.</p>
+              <p class="review-author">David Mitchell <span class="verified-text">Verified</span></p>
             </div>
           </div>
 
           <!-- FAQ -->
           <div class="sidebar-card">
-            <h3 class="sidebar-title">FAQ</h3>
-            <div class="faq-item active">
-              <button class="faq-question">
-                What is IPTV?
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <p class="faq-answer">IPTV delivers television content over internet instead of cable or satellite.</p>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                Supported devices?
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <p class="faq-answer">Smart TVs, Android TV, Firestick, Apple TV, MAG devices, Windows, macOS and more.</p>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                Live TV & on-demand?
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <p class="faq-answer">Yes, most providers offer live television along with movies and TV series.</p>
-            </div>
-            <div class="faq-item">
-              <button class="faq-question">
-                How to compare?
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <p class="faq-answer">Compare by devices, channels, quality, support, pricing and reliability.</p>
+            <h3 class="sidebar-title">Common Questions</h3>
+            <div class="faq-list">
+              <div class="faq-item active">
+                <button class="faq-trigger" onclick="toggleFaq(this)">
+                  What is IPTV technology?
+                  <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content">
+                  <p class="faq-answer">IPTV (Internet Protocol Television) delivers television content via internet connectivity rather than traditional satellite or cable formats, enabling on-demand and live streaming capabilities.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaq(this)">
+                  Compatible devices?
+                  <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content">
+                  <p class="faq-answer">Services typically support Smart TVs, streaming devices (Fire TV, Apple TV, Roku), mobile platforms (Android, iOS), and desktop operating systems (Windows, macOS).</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaq(this)">
+                  Content availability?
+                  <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content">
+                  <p class="faq-answer">Most providers offer live television channels, movies, television series, and sports programming. Content libraries vary by service tier and geographic region.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaq(this)">
+                  How to evaluate providers?
+                  <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content">
+                  <p class="faq-answer">Consider channel selection, streaming resolution, device compatibility, customer responsiveness, pricing structure, and trial availability when comparing services.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
     </div>
   </section>
@@ -782,146 +1102,264 @@
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
-      <p class="cta-text">Compare providers and find the best IPTV service for you</p>
-      <button class="btn btn-gradient" onclick="openModal()">Add New Provider</button>
+      <p class="cta-text">Compare verified providers and find the optimal streaming solution for your entertainment requirements.</p>
+      <button class="btn btn-secondary" onclick="openModal()">Submit New Provider</button>
     </div>
   </section>
 
   <!-- Modal -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-container">
       <div class="modal-header">
-        <h3 class="modal-title">Add New IPTV Provider</h3>
+        <h3 class="modal-title">Add Provider Listing</h3>
         <button class="modal-close" onclick="closeModal()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
-      <form id="addProviderForm" onsubmit="handleAddProvider(event)">
+      <form id="providerForm" onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label class="form-label">Provider Name</label>
-          <input type="text" class="form-input" id="providerName" placeholder="e.g., NewStream TV" required>
+          <input type="text" class="form-control" id="inputName" placeholder="Official service name" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Description</label>
-          <textarea class="form-input" id="providerDesc" placeholder="Brief description..." required></textarea>
+          <label class="form-label">Service Description</label>
+          <textarea class="form-control" id="inputDescription" placeholder="Brief overview of offerings..." required></textarea>
         </div>
         <div class="form-group">
           <label class="form-label">Website URL</label>
-          <input type="url" class="form-input" id="providerUrl" placeholder="https://example.com" required>
+          <input type="url" class="form-control" id="inputWebsite" placeholder="https://provider-domain.com" required>
         </div>
         <div class="form-group">
-          <label class="form-label">Features <span style="color: #64748b">(comma separated)</span></label>
-          <input type="text" class="form-input" id="providerFeatures" placeholder="Live TV, Sports, Movies, HD">
+          <label class="form-label">Key Features <span class="label-hint">(comma-separated)</span></label>
+          <input type="text" class="form-control" id="inputFeatures" placeholder="Live TV, Sports, VOD, 4K">
         </div>
-        <div class="modal-actions">
-          <button type="button" class="btn btn-outline" onclick="closeModal()">Cancel</button>
-          <button type="submit" class="btn btn-gradient">Add Provider</button>
+        <div class="form-actions">
+          <button type="button" class="btn btn-ghost" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn btn-secondary">Submit Listing</button>
         </div>
       </form>
     </div>
   </div>
 
   <script>
-    // Provider Data
-    let providers = [
-      { id: 1, rank: 1, name: 'Tivi Live', desc: 'Live TV channels, sports, entertainment, movies and VOD.', features: ['Live TV', 'Movies & Series', 'Sports', '4K Support'], url: 'https://tivi-live.com/', tier: 'Premium' },
-      { id: 2, rank: 2, name: 'Flash4K IPTV', desc: 'Broad selection of channels, VOD and streaming support.', features: ['Worldwide Channels', 'HD / FHD', 'VOD', 'EPG'], url: 'https://flash4kiptv.com/', tier: 'Premium' },
-      { id: 3, rank: 3, name: 'Zorba Network', desc: 'International live TV channels, sports and movies.', features: ['International Channels', 'Movies & TV', 'Sports', 'HD/FHD'], url: 'https://www.zorba.network/', tier: 'Premium' },
-      { id: 4, rank: 4, name: 'FreeGoTV', desc: 'Live television, entertainment channels and VOD.', features: ['Live Television', 'Movies Library', 'EPG', 'Multi Device'], url: 'https://freegotv.com/', tier: 'Premium' },
-      { id: 5, rank: 5, name: 'TVCorn', desc: 'Live channels, movies, sports and family entertainment.', features: ['Worldwide Channels', 'HD Streaming', 'VOD Library', 'Sports'], url: 'https://tvcorn.com/', tier: 'Premium' },
-      { id: 6, rank: 6, name: 'OTTOcean', desc: 'Live channels, sports events and on-demand content.', features: ['Live IPTV', 'Sports', 'Movies', 'TV Series'], url: 'https://ottocean.com/', tier: 'Premium' },
-      { id: 7, rank: 7, name: 'TrendyScreen', desc: 'Premium entertainment, sports channels and VOD.', features: ['Premium Channels', 'VOD Collection', 'Sports', '4K Ready'], url: 'https://trendyscreen.com/', tier: 'Premium' },
-      { id: 8, rank: 8, name: 'WorthyStream', desc: 'International TV, sports, movies and on-demand.', features: ['International Channels', 'Movies & Series', 'Sports', 'HD/FHD'], url: 'https://worthystream.com/', tier: 'Premium' },
-      { id: 9, rank: 9, name: 'BunnyStream', desc: 'Live TV, sports, entertainment and documentaries.', features: ['Live Television', 'Sports Channels', 'Movies', 'TV Shows'], url: 'https://bunnystream.com/', tier: 'Premium' },
-      { id: 10, rank: 10, name: 'IPTVTune', desc: 'Live TV channels, sports programming and VOD.', features: ['HD Streaming', 'Sports', 'VOD Library', 'TV Guide'], url: 'https://iptvtune.com/', tier: 'Premium' },
-      { id: 11, rank: 11, name: 'TellyStudio', desc: 'Live television, movies, TV shows and entertainment.', features: ['Live Channels', 'Movies', 'TV Series', 'HD Quality'], url: 'https://tellystudio.com/', tier: 'Premium' },
-      { id: 12, rank: 12, name: 'TiviStation', desc: 'Live TV channels, movies, sports and entertainment.', features: ['Worldwide IPTV', 'Movies & Series', 'Sports', 'HD/FHD'], url: 'https://tivistation.com/', tier: 'Premium' },
+    // Provider dataset
+    const providersData = [
+      {
+        id: 1,
+        rank: 1,
+        name: 'Tivi Live',
+        description: 'Comprehensive streaming service offering live television, sports programming, movies, and video-on-demand content across multiple device platforms.',
+        features: ['Live Television', 'Movies & Series', 'Sports Coverage', '4K Ultra HD'],
+        website: 'https://tivi-live.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 2,
+        rank: 2,
+        name: 'Flash4K IPTV',
+        description: 'Extensive channel catalog with high-definition streaming quality and broad device compatibility for modern entertainment needs.',
+        features: ['Global Channels', 'HD/FHD Quality', 'VOD Library', 'EPG Guide'],
+        website: 'https://flash4kiptv.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 3,
+        rank: 3,
+        name: 'Zorba Network',
+        description: 'International programming with diverse content offerings including live sports, cinema, and television series across supported platforms.',
+        features: ['International Content', 'Cinema Library', 'Sports', 'HD/FHD'],
+        website: 'https://www.zorba.network/',
+        tier: 'Premium'
+      },
+      {
+        id: 4,
+        rank: 4,
+        name: 'FreeGoTV',
+        description: 'Accessible streaming platform featuring live broadcasts, entertainment programming, and expanding on-demand collection.',
+        features: ['Live Broadcast', 'Entertainment', 'VOD', 'Multi-Device'],
+        website: 'https://freegotv.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 5,
+        rank: 5,
+        name: 'TVCorn',
+        description: 'Family-oriented service delivering varied entertainment including live channels, sports content, and cinema programming.',
+        features: ['Global Channels', 'HD Streaming', 'VOD', 'Sports'],
+        website: 'https://tvcorn.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 6,
+        rank: 6,
+        name: 'OTTOcean',
+        description: 'Modern streaming solution with live programming, sporting events, and comprehensive on-demand entertainment options.',
+        features: ['Live Streaming', 'Sports Events', 'Movies', 'TV Series'],
+        website: 'https://ottocean.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 7,
+        rank: 7,
+        name: 'TrendyScreen',
+        description: 'Premium entertainment platform featuring curated channel selection, sports coverage, and quality video-on-demand.',
+        features: ['Premium Channels', 'VOD Collection', 'Sports', '4K Ready'],
+        website: 'https://trendyscreen.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 8,
+        rank: 8,
+        name: 'WorthyStream',
+        description: 'International streaming with diverse live programming, sports, cinema and television content for global audiences.',
+        features: ['International', 'Movies & Series', 'Sports', 'HD Quality'],
+        website: 'https://worthystream.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 9,
+        rank: 9,
+        name: 'BunnyStream',
+        description: 'Entertainment-focused service providing live broadcasts, sports channels, cinema, and documentary programming.',
+        features: ['Live Television', 'Sports', 'Cinema', 'Documentaries'],
+        website: 'https://bunnystream.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 10,
+        rank: 10,
+        name: 'IPTVTune',
+        description: 'Comprehensive live television with sports programming, entertainment content, and curated video library.',
+        features: ['HD Streaming', 'Sports', 'VOD', 'Program Guide'],
+        website: 'https://iptvtune.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 11,
+        rank: 11,
+        name: 'TellyStudio',
+        description: 'Complete entertainment package with live channels, cinema releases, and television series across supported devices.',
+        features: ['Live Channels', 'Cinema', 'TV Series', 'HD Quality'],
+        website: 'https://tellystudio.com/',
+        tier: 'Premium'
+      },
+      {
+        id: 12,
+        rank: 12,
+        name: 'TiviStation',
+        description: 'Global streaming service with international programming, sports coverage, and entertainment content.',
+        features: ['Global IPTV', 'Movies', 'Sports', 'HD/FHD'],
+        website: 'https://tivistation.com/',
+        tier: 'Premium'
+      }
     ];
 
-    // Render Providers
-    function renderProviders(filteredProviders = providers) {
-      const grid = document.getElementById('providersGrid');
-      grid.innerHTML = filteredProviders.map(p => `
-        <div class="provider-card">
-          <div class="provider-header">
-            <div class="provider-info">
-              <div class="rank-badge">${p.rank}</div>
-              <span class="provider-name">
-                ${p.name}
-                ${p.rank <= 3 ? '<svg class="award" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>' : ''}
-              </span>
-            </div>
-            <span class="tier-badge">${p.tier}</span>
-          </div>
-          <p class="provider-desc">${p.desc}</p>
-          <div class="provider-features">
-            ${p.features.slice(0, 3).map(f => `<span class="feature-tag">${f}</span>`).join('')}
-          </div>
-          <a href="${p.url}" target="_blank" rel="noopener" class="provider-link">
-            Visit Website <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-          </a>
-        </div>
-      `).join('');
+    let providers = [...providersData];
 
-      // Update badge count
-      document.querySelector('.badge').textContent = `${providers.length} Listed`;
+    // Render providers grid
+    function renderProviders(data = providers) {
+      const container = document.getElementById('providersGrid');
+      const countBadge = document.getElementById('providerCount');
+
+      countBadge.textContent = `${data.length} Listed`;
+
+      container.innerHTML = data.map((provider, index) => `
+        <article class="provider-card">
+          <div class="provider-header">
+            <div class="provider-identity">
+              <div class="rank-indicator ${provider.rank <= 3 ? 'top-3' : ''}">${provider.rank}</div>
+              <h3 class="provider-name">
+                ${provider.name}
+                ${provider.rank <= 3 ? '<svg class="verified-badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>' : ''}
+              </h3>
+            </div>
+            <span class="tier-label">${provider.tier}</span>
+          </div>
+          <p class="provider-description">${provider.description}</p>
+          <div class="features-list">
+            ${provider.features.map(f => `<span class="feature-chip">${f}</span>`).join('')}
+          </div>
+          <div class="provider-footer">
+            <a href="${provider.website}" target="_blank" rel="noopener noreferrer" class="provider-link">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+      `).join('');
     }
 
-    // Search
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase();
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query) {
+        renderProviders();
+        return;
+      }
+
       const filtered = providers.filter(p =>
         p.name.toLowerCase().includes(query) ||
-        p.desc.toLowerCase().includes(query)
+        p.description.toLowerCase().includes(query) ||
+        p.features.some(f => f.toLowerCase().includes(query))
       );
+
       renderProviders(filtered);
     });
 
-    // FAQ Toggle
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        document.querySelectorAll('.faq-item').forEach(i => {
-          if (i !== item) i.classList.remove('active');
-        });
-        item.classList.toggle('active');
-      });
-    });
+    // FAQ accordion
+    function toggleFaq(trigger) {
+      const item = trigger.parentElement;
+      const isActive = item.classList.contains('active');
 
-    // Modal Functions
+      // Close all items
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+      // Open clicked item if it wasn't active
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Modal functions
     function openModal() {
-      document.getElementById('modalOverlay').classList.add('active');
+      document.getElementById('modalBackdrop').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
-      document.getElementById('modalOverlay').classList.remove('active');
+      document.getElementById('modalBackdrop').classList.remove('active');
       document.body.style.overflow = '';
-      document.getElementById('addProviderForm').reset();
+      document.getElementById('providerForm').reset();
     }
 
-    // Close modal on overlay click
-    document.getElementById('modalOverlay').addEventListener('click', (e) => {
-      if (e.target === e.currentTarget) closeModal();
-    });
+    function closeModalOnBackdrop(event) {
+      if (event.target === event.currentTarget) {
+        closeModal();
+      }
+    }
 
-    // Add Provider
-    function handleAddProvider(e) {
-      e.preventDefault();
+    // Form submission
+    function handleSubmit(event) {
+      event.preventDefault();
 
-      const name = document.getElementById('providerName').value;
-      const desc = document.getElementById('providerDesc').value;
-      const url = document.getElementById('providerUrl').value;
-      const featuresInput = document.getElementById('providerFeatures').value;
-      const features = featuresInput.split(',').map(f => f.trim()).filter(Boolean);
+      const name = document.getElementById('inputName').value.trim();
+      const description = document.getElementById('inputDescription').value.trim();
+      const website = document.getElementById('inputWebsite').value.trim();
+      const featuresInput = document.getElementById('inputFeatures').value.trim();
+
+      const features = featuresInput
+        .split(',')
+        .map(f => f.trim())
+        .filter(f => f.length > 0);
 
       const newProvider = {
         id: Date.now(),
         rank: providers.length + 1,
         name,
-        desc,
-        url,
-        features: features.length ? features : ['IPTV'],
+        description,
+        website,
+        features: features.length > 0 ? features : ['Streaming Services'],
         tier: 'Premium'
       };
 
@@ -930,7 +1368,14 @@
       closeModal();
     }
 
-    // Initial Render
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.getElementById('modalBackdrop').classList.contains('active')) {
+        closeModal();
+      }
+    });
+
+    // Initialize
     renderProviders();
   </script>
 </body>
