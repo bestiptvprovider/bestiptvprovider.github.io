@@ -1,2220 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Best IPTV Providers Ranking 2026 | Compare Top IPTV Services</title>
-
-<meta name="description"
-content="Compare the best IPTV providers with detailed reviews, pricing, supported devices, streaming quality, channel counts and features.">
-
-<meta name="keywords"
-content="Best IPTV, IPTV Providers, IPTV Ranking, IPTV Reviews, IPTV Subscription">
-
-<meta name="author"
-content="Best IPTV Provider">
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best IPTV Providers Ranking 2026 | Compare Top IPTV Services</title>
+  <meta name="description" content="Compare the best IPTV providers with detailed reviews, pricing, supported devices, streaming quality, channel counts and features.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-
-/* =======================================================
-   IPTV RANKING WEBSITE - STYLE.CSS
-   PART 1: CORE SYSTEM + LAYOUT
-======================================================= */
-
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #070b1a;
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-/* ROOT VARIABLES */
-:root {
-  --primary: #00d4ff;
-  --secondary: #7b2ff7;
-  --bg: #070b1a;
-  --card: #0f1730;
-  --text: #ffffff;
-  --muted: #a9b4d0;
-  --border: rgba(255,255,255,0.08);
-  --shadow: 0 10px 30px rgba(0,0,0,0.4);
-  --radius: 14px;
-}
-
-/* GLOBAL */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-/* CONTAINER */
-.container {
-  width: 92%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ================= NAVBAR ================= */
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(10, 15, 35, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  z-index: 999;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-links {
-  display: flex;
-  gap: 22px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--muted);
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--primary);
-}
-
-/* BUTTON */
-.btn {
-  padding: 12px 22px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  color: #fff;
-  font-weight: 600;
-  transition: 0.3s;
-  display: inline-block;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-}
-
-/* ================= HERO ================= */
-
-.hero {
-  padding: 140px 0 80px;
-  background: radial-gradient(circle at top, rgba(0,212,255,0.15), transparent 60%),
-              radial-gradient(circle at bottom, rgba(123,47,247,0.15), transparent 60%);
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  line-height: 1.2;
-}
-
-.hero h1 span {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-  margin: 18px 0;
-  color: var(--muted);
-}
-
-/* SEARCH */
-.search-box {
-  margin-top: 20px;
-  display: flex;
-  border-radius: 50px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-}
-
-.search-box input {
-  flex: 1;
-  padding: 14px;
-  border: none;
-  outline: none;
-  background: #0e1630;
-  color: #fff;
-}
-
-.search-box button {
-  padding: 14px 18px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  color: #fff;
-}
-
-/* ================= FEATURES ================= */
-
-.features {
-  padding: 60px 0;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.feature {
-  background: var(--card);
-  padding: 20px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  transition: 0.3s;
-}
-
-.feature:hover {
-  transform: translateY(-6px);
-}
-
-.feature i {
-  font-size: 26px;
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-/* =======================================================
-   IPTV RANKING WEBSITE - STYLE.CSS
-   PART 2: COMPONENTS + SECTIONS
-======================================================= */
-
-/* ================= PROVIDER CARDS ================= */
-
-.providers {
-  padding: 60px 0;
-}
-
-.providers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.provider-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: 0.3s;
-  position: relative;
-}
-
-.provider-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow);
-}
-
-.provider-rank {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.provider-img {
-  height: 180px;
-  overflow: hidden;
-}
-
-.provider-img img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.provider-content {
-  padding: 18px;
-}
-
-.provider-content h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.provider-content p {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.provider-features {
-  list-style: none;
-  margin-bottom: 14px;
-}
-
-.provider-features li {
-  font-size: 13px;
-  color: #cdd6f4;
-  margin-bottom: 6px;
-}
-
-.provider-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.provider-btn a {
-  font-size: 13px;
-}
-
-/* ================= COMPARISON TABLE ================= */
-
-.table-section {
-  padding: 60px 0;
-}
-
-.table-wrapper {
-  overflow-x: auto;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 800px;
-  background: var(--card);
-}
-
-thead {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-}
-
-thead th {
-  padding: 14px;
-  font-size: 14px;
-  text-align: center;
-}
-
-tbody td {
-  padding: 14px;
-  text-align: center;
-  border-bottom: 1px solid var(--border);
-  color: var(--muted);
-}
-
-tbody tr:hover {
-  background: rgba(255,255,255,0.03);
-}
-
-/* ================= REVIEWS ================= */
-
-.reviews {
-  padding: 60px 0;
-}
-
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.review-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 18px;
-  border-radius: var(--radius);
-}
-
-.review-card .stars {
-  color: gold;
-  margin-bottom: 10px;
-}
-
-.review-card p {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.review-card h4 {
-  margin-top: 12px;
-  font-size: 14px;
-}
-
-/* ================= FAQ ================= */
-
-.faq {
-  padding: 60px 0;
-}
-
-.faq-item {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-
-.faq-question {
-  padding: 14px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.faq-answer {
-  padding: 0 14px 14px;
-  color: var(--muted);
-  display: none;
-}
-
-/* ================= CTA ================= */
-
-.cta {
-  padding: 70px 0;
-  text-align: center;
-  background: radial-gradient(circle at center, rgba(0,212,255,0.15), transparent 60%);
-}
-
-.cta h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.cta p {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-  padding: 50px 0;
-  border-top: 1px solid var(--border);
-  background: #060914;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.footer-col h3 {
-  margin-bottom: 10px;
-}
-
-.footer-col a {
-  display: block;
-  color: var(--muted);
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-
-.footer-col a:hover {
-  color: var(--primary);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* =======================================================
-   IPTV RANKING WEBSITE - STYLE.CSS
-   PART 3: FINAL POLISH + RESPONSIVE + ANIMATIONS
-======================================================= */
-
-/* ================= ANIMATIONS ================= */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0); }
-}
-
-.hero img {
-  animation: float 4s ease-in-out infinite;
-}
-
-/* ================= MICRO INTERACTIONS ================= */
-
-.provider-card,
-.feature,
-.review-card,
-.faq-item {
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-button,
-.btn,
-.provider-btn a {
-  transition: all 0.3s ease;
-}
-
-button:hover,
-.btn:hover {
-  filter: brightness(1.1);
-}
-
-/* ================= GLASSMORPHISM ENHANCEMENT ================= */
-
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* ================= UTILITY CLASSES ================= */
-
-.text-center {
-  text-align: center;
-}
-
-.mt-20 { margin-top: 20px; }
-.mt-40 { margin-top: 40px; }
-.mb-20 { margin-bottom: 20px; }
-.mb-40 { margin-bottom: 40px; }
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-/* ================= BACK TO TOP BUTTON ================= */
-
-#backToTop {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow);
-  z-index: 999;
-}
-
-#backToTop:hover {
-  transform: translateY(-4px);
-}
-
-/* ================= DARK THEME POLISH ================= */
-
-body {
-  background: radial-gradient(circle at top, #0a0f24, #050714);
-}
-
-section {
-  scroll-margin-top: 80px;
-}
-
-/* ================= HOVER EFFECTS ================= */
-
-.provider-card:hover .provider-img img {
-  transform: scale(1.05);
-  transition: 0.4s ease;
-}
-
-.feature:hover {
-  border-color: var(--primary);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
-}
-
-.review-card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
-
-/* ================= BUTTON GLOW EFFECT ================= */
-
-.btn {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.2);
-  transition: 0.4s;
-}
-
-.btn:hover::after {
-  left: 100%;
-}
-
-/* ================= RESPONSIVE DESIGN ================= */
-
-@media (max-width: 1024px) {
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .providers-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .review-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .providers-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .review-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .search-box {
-    flex-direction: column;
-  }
-
-  .search-box button {
-    width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-}
-
-</style>
-
+    /* ==================== RESET & BASE ==================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: linear-gradient(to bottom, #0a0f24, #050714);
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ==================== CONTAINER ==================== */
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ==================== HERO SECTION ==================== */
+    .hero {
+      padding: 20px 0;
+      background: radial-gradient(circle at top, rgba(0,212,255,0.12), transparent 50%);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-text h1 span {
+      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-text p {
+      color: #94a3b8;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* ==================== SEARCH BOX ==================== */
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      padding: 8px 12px 8px 32px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 12px;
+      width: 200px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .search-box input:focus {
+      border-color: rgba(0,212,255,0.5);
+    }
+
+    .search-box input::placeholder {
+      color: #64748b;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: #64748b;
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #10b981, #0d9488);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-gradient {
+      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+      color: #fff;
+    }
+
+    .btn-gradient:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+    }
+
+    /* ==================== FEATURES BAR ==================== */
+    .features-bar {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cbd5e1;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .feature-item svg {
+      width: 16px;
+      height: 16px;
+      color: #00d4ff;
+    }
+
+    /* ==================== MAIN LAYOUT ==================== */
+    .main-section {
+      padding: 16px 0;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 1024px) {
+      .main-grid {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    /* ==================== SECTION TITLE ==================== */
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title .badge {
+      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 10px;
+    }
+
+    /* ==================== PROVIDER CARDS ==================== */
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .provider-card {
+      background: rgba(30, 41, 59, 0.3);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 12px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .provider-card:hover {
+      border-color: rgba(0, 212, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .provider-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .provider-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rank-badge {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .provider-name {
+      font-weight: 600;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .provider-name .award {
+      color: #fbbf24;
+      width: 14px;
+      height: 14px;
+    }
+
+    .tier-badge {
+      background: rgba(139, 92, 246, 0.2);
+      color: #c4b5fd;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .provider-desc {
+      color: #94a3b8;
+      font-size: 11px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .provider-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .feature-tag {
+      background: rgba(51, 65, 85, 0.5);
+      color: #cbd5e1;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+    }
+
+    .provider-link {
+      color: #00d4ff;
+      font-size: 11px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.3s;
+    }
+
+    .provider-link:hover {
+      color: #22d3ee;
+    }
+
+    .provider-link svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* ==================== SIDEBAR ==================== */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .sidebar-card {
+      background: rgba(30, 41, 59, 0.3);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .sidebar-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    /* ==================== TABLE ==================== */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    .comparison-table th {
+      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(139,92,246,0.2));
+      padding: 8px 6px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .comparison-table td {
+      padding: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: #cbd5e1;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* ==================== REVIEWS ==================== */
+    .review-item {
+      background: rgba(51, 65, 85, 0.2);
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    .review-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 4px;
+    }
+
+    .review-stars svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .star-filled {
+      color: #fbbf24;
+      fill: #fbbf24;
+    }
+
+    .star-empty {
+      color: #475569;
+    }
+
+    .review-text {
+      font-size: 11px;
+      color: #cbd5e1;
+      margin-bottom: 4px;
+    }
+
+    .review-author {
+      font-size: 10px;
+      color: #10b981;
+    }
+
+    /* ==================== FAQ ==================== */
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 8px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      transition: color 0.3s;
+    }
+
+    .faq-question:hover {
+      color: #00d4ff;
+    }
+
+    .faq-question svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      font-size: 11px;
+      color: #94a3b8;
+      padding-top: 6px;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* ==================== CTA ==================== */
+    .cta-section {
+      padding: 16px 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      text-align: center;
+      background: radial-gradient(circle at center, rgba(0,212,255,0.1), transparent 60%);
+    }
+
+    .cta-text {
+      color: #94a3b8;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    /* ==================== MODAL ==================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 1000;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: #1e293b;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .modal-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .modal-close:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .modal-close svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: rgba(51, 65, 85, 0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 12px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-input:focus {
+      border-color: #00d4ff;
+    }
+
+    .form-input::placeholder {
+      color: #64748b;
+    }
+
+    textarea.form-input {
+      resize: none;
+      min-height: 60px;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .modal-actions .btn {
+      flex: 1;
+      justify-content: center;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #cbd5e1;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 640px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-actions {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .search-box input {
+        width: 100%;
+      }
+
+      .providers-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<div class="container navbar">
-
-<a href="/" class="logo">
-
-BEST IPTV
-
-</a>
-
-<nav>
-
-<ul class="nav-links">
-
-<li><a href="/">Home</a></li>
-
-<li><a href="#ranking">Ranking</a></li>
-
-<li><a href="#compare">Comparison</a></li>
-
-<li><a href="#reviews">Reviews</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<a href="#ranking" class="btn">
-
-Explore Ranking
-
-</a>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<h1>
-
-Find The
-
-<span>Best IPTV</span>
-
-Provider For Your Needs
-
-</h1>
-
-<p>
-
-Compare premium IPTV providers including channel selection, VOD libraries, streaming quality, device compatibility, customer support, and pricing in one place.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#ranking" class="btn">
-
-View Rankings
-
-</a>
-
-<a href="#compare" class="btn secondary-btn">
-
-Compare Plans
-
-</a>
-
-</div>
-
-<div class="search-box">
-
-<input
-type="text"
-id="searchInput"
-placeholder="Search IPTV Provider...">
-
-<button>
-
-<i class="fa-solid fa-magnifying-glass"></i>
-
-Search
-
-</button>
-
-</div>
-
-</div>
-
-<div>
-
-<img src="images/hero.png"
-class="float"
-alt="IPTV">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<div class="container">
-
-<div class="feature-grid">
-
-<div class="feature">
-
-<i class="fa-solid fa-tv"></i>
-
-<h3>
-
-Live TV
-
-</h3>
-
-<p>
-
-Thousands of worldwide live television channels.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-film"></i>
-
-<h3>
-
-Movies & Series
-
-</h3>
-
-<p>
-
-Large VOD libraries including TV shows and movies.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-<h3>
-
-All Devices
-
-</h3>
-
-<p>
-
-Android, Firestick, Smart TV, Apple TV, MAG and more.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-bolt"></i>
-
-<h3>
-
-Fast Streaming
-
-</h3>
-
-<p>
-
-HD, FHD and 4K streaming where supported by providers.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="compare">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-Compare IPTV Providers
-
-</h2>
-
-<p>
-
-Quick overview of popular IPTV services.
-
-</p>
-
-</div>
-
-<div class="table-wrapper">
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Provider</th>
-<th>Channels</th>
-<th>VOD</th>
-<th>4K</th>
-<th>Devices</th>
-<th>Support</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Tivi Live</td>
-
-<td>18K+</td>
-
-<td>Yes</td>
-
-<td>Yes</td>
-
-<td>All</td>
-
-<td>24/7</td>
-
-</tr>
-
-<tr>
-
-<td>Flash4K IPTV</td>
-
-<td>20K+</td>
-
-<td>Yes</td>
-
-<td>Yes</td>
-
-<td>All</td>
-
-<td>24/7</td>
-
-</tr>
-
-<tr>
-
-<td>Zorba Network</td>
-
-<td>15K+</td>
-
-<td>Yes</td>
-
-<td>Yes</td>
-
-<td>All</td>
-
-<td>Ticket</td>
-
-</tr>
-
-<tr>
-
-<td>FreeGoTV</td>
-
-<td>12K+</td>
-
-<td>Yes</td>
-
-<td>HD</td>
-
-<td>All</td>
-
-<td>Email</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</section>
-
-<section
-class="providers"
-id="ranking">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-Top IPTV Providers
-
-</h2>
-
-<p>
-
-Browse provider details and compare features.
-
-</p>
-
-</div>
-
-<div class="providers">
-
-<!-- Provider 1 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-1
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/tivilive.jpg"
-alt="Tivi Live">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-Tivi Live
-
-</h3>
-
-<p>
-
-Tivi Live offers live TV channels, sports, entertainment, movies and VOD across multiple supported devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Live TV</li>
-
-<li>✔ Movies & Series</li>
-
-<li>✔ Sports</li>
-
-<li>✔ 4K Support</li>
-
-<li>✔ Smart TV Compatible</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a href="#"
-
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 2 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-2
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/flash4k.jpg"
-alt="Flash4K IPTV">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-Flash4K IPTV
-
-</h3>
-
-<p>
-
-Provides a broad selection of channels, VOD and support for many streaming devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Worldwide Channels</li>
-
-<li>✔ HD / FHD</li>
-
-<li>✔ VOD</li>
-
-<li>✔ EPG</li>
-
-<li>✔ Multi Device</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a href="#"
-
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 3 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-3
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/zorba.jpg"
-alt="Zorba Network">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-Zorba Network
-
-</h3>
-
-<p>
-
-Zorba Network provides international live TV channels, sports coverage, movies, TV series and multi-device streaming support with an extensive entertainment catalog.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ International Channels</li>
-
-<li>✔ Movies & TV Shows</li>
-
-<li>✔ Sports Coverage</li>
-
-<li>✔ HD / FHD Streaming</li>
-
-<li>✔ Smart TV & Android Support</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://www.zorba.network"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 4 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-4
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/freegotv.jpg"
-alt="FreeGoTV">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-FreeGoTV
-
-</h3>
-
-<p>
-
-FreeGoTV offers live television, entertainment channels, movies, documentaries and a growing VOD collection for compatible IPTV applications.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Live Television</li>
-
-<li>✔ Movies Library</li>
-
-<li>✔ Entertainment Channels</li>
-
-<li>✔ Electronic Program Guide</li>
-
-<li>✔ Multiple Device Support</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://freegotv.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 5 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-5
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/tvcorn.jpg"
-alt="TVCorn">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-TVCorn
-
-</h3>
-
-<p>
-
-TVCorn includes a wide variety of live channels, movies, sports and family entertainment with support for many popular IPTV devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Worldwide Channels</li>
-
-<li>✔ HD Streaming</li>
-
-<li>✔ VOD Library</li>
-
-<li>✔ Sports & Kids</li>
-
-<li>✔ Android & Firestick</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://tvcorn.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 6 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-6
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/ottocean.jpg"
-alt="OTTOcean">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-OTTOcean
-
-</h3>
-
-<p>
-
-OTTOcean provides live channels, sports events, entertainment programming and on-demand content across a range of supported streaming devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Live IPTV</li>
-
-<li>✔ Sports</li>
-
-<li>✔ Movies</li>
-
-<li>✔ TV Series</li>
-
-<li>✔ Multi Device</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://ottocean.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 7 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-7
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/trendyscreen.jpg"
-alt="TrendyScreen">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-TrendyScreen
-
-</h3>
-
-<p>
-
-TrendyScreen delivers live television, premium entertainment, sports channels and video-on-demand content for modern IPTV users.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Premium Channels</li>
-
-<li>✔ VOD Collection</li>
-
-<li>✔ Sports Coverage</li>
-
-<li>✔ HD & 4K Ready</li>
-
-<li>✔ EPG Support</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://trendyscreen.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 8 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-8
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/worthystream.jpg"
-alt="WorthyStream">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-WorthyStream
-
-</h3>
-
-<p>
-
-WorthyStream offers international live television, sports, movies, TV series and on-demand entertainment with support for popular IPTV devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ International Channels</li>
-
-<li>✔ Movies & Series</li>
-
-<li>✔ Sports Streaming</li>
-
-<li>✔ HD / FHD Support</li>
-
-<li>✔ Multi Device Compatible</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://worthystream.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 9 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-9
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/bunnystream.jpg"
-alt="BunnyStream">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-BunnyStream
-
-</h3>
-
-<p>
-
-BunnyStream includes live TV, sports, entertainment, documentaries and a growing VOD collection with support for multiple streaming platforms.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Live Television</li>
-
-<li>✔ Sports Channels</li>
-
-<li>✔ Movies Library</li>
-
-<li>✔ TV Shows</li>
-
-<li>✔ Firestick Ready</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://bunnystream.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 10 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-10
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/iptvtune.jpg"
-alt="IPTVTune">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-IPTVTune
-
-</h3>
-
-<p>
-
-IPTVTune provides live television channels, sports programming, premium entertainment and VOD content across supported IPTV applications.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ HD Streaming</li>
-
-<li>✔ Sports</li>
-
-<li>✔ VOD Library</li>
-
-<li>✔ TV Guide</li>
-
-<li>✔ Android Compatible</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://iptvtune.com/pay/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 11 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-11
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/tellystudio.jpg"
-alt="TellyStudio">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-TellyStudio
-
-</h3>
-
-<p>
-
-TellyStudio offers access to live television, movies, TV shows and entertainment channels with compatibility across a wide range of devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Live Channels</li>
-
-<li>✔ Movies</li>
-
-<li>✔ TV Series</li>
-
-<li>✔ HD Quality</li>
-
-<li>✔ Smart TV Support</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://tellystudio.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Provider 12 -->
-
-<div class="provider-card">
-
-<div class="rank">
-
-12
-
-</div>
-
-<div class="provider-image">
-
-<img
-src="images/tivistation.jpg"
-alt="TiviStation">
-
-</div>
-
-<div class="provider-content">
-
-<h3>
-
-TiviStation
-
-</h3>
-
-<p>
-
-TiviStation delivers live TV channels, movies, sports and entertainment with support for many IPTV compatible streaming devices.
-
-</p>
-
-<ul class="provider-list">
-
-<li>✔ Worldwide IPTV</li>
-
-<li>✔ Movies & Series</li>
-
-<li>✔ Sports Coverage</li>
-
-<li>✔ HD / FHD Streaming</li>
-
-<li>✔ Multiple Devices</li>
-
-</ul>
-
-<div class="provider-bottom">
-
-<a
-href="https://tivistation.com/"
-target="_blank"
-class="visit-btn">
-
-Visit Website
-
-</a>
-
-<span class="price">
-
-Premium
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Reviews Section -->
-
-<section id="reviews">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-User Reviews
-
-</h2>
-
-<p>
-
-Read what users appreciate about IPTV services and streaming experiences.
-
-</p>
-
-</div>
-
-<div class="review-grid">
-
-<div class="review">
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<p>
-
-Great streaming quality with a large selection of live channels and on-demand entertainment.
-
-</p>
-
-<h4>
-
-Michael R.
-
-</h4>
-
-<span>
-
-Verified User
-
-</span>
-
-</div>
-
-<div class="review">
-
-<div class="rating">
-
-★★★★★
-
-</div>
-
-<p>
-
-Easy setup across multiple devices with a smooth viewing experience and responsive customer support.
-
-</p>
-
-<h4>
-
-Sarah L.
-
-</h4>
-
-<span>
-
-Verified User
-
-</span>
-
-</div>
-
-<div class="review">
-
-<div class="rating">
-
-★★★★☆
-
-</div>
-
-<p>
-
-Wide channel availability and reliable performance made it easy to enjoy sports and entertainment.
-
-</p>
-
-<h4>
-
-David M.
-
-</h4>
-
-<span>
-
-Verified User
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ Section -->
-
-<section id="faq">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-Frequently Asked Questions
-
-</h2>
-
-<p>
-
-Common questions about IPTV services and how to choose the right provider.
-
-</p>
-
-</div>
-
-<div class="faq">
-
-<div class="faq-item">
-
-<div class="faq-question">
-
-What is IPTV?
-
-</div>
-
-<div class="faq-answer">
-
-IPTV (Internet Protocol Television) is a method of delivering television content over an internet connection instead of traditional cable or satellite systems.
-
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<div class="faq-question">
-
-What devices are commonly supported?
-
-</div>
-
-<div class="faq-answer">
-
-Many IPTV services support Smart TVs, Android TV, Fire TV, Firestick, Android phones, tablets, Apple TV, MAG devices, Windows, macOS and compatible IPTV player applications.
-
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<div class="faq-question">
-
-Do IPTV providers offer live TV and on-demand content?
-
-</div>
-
-<div class="faq-answer">
-
-Available content varies by provider. Many services include live television along with movies and TV series, but the exact catalog differs between providers.
-
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<div class="faq-question">
-
-How do I compare IPTV providers?
-
-</div>
-
-<div class="faq-answer">
-
-Compare providers based on supported devices, channel selection, streaming quality, customer support, pricing, trial availability and overall reliability.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-
-Compare IPTV Providers In One Place
-
-</h2>
-
-<p>
-
-Browse provider information, compare features and explore available options before choosing a service.
-
-</p>
-
-<a href="#ranking" class="btn">
-
-Explore Providers
-
-</a>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-
-<footer id="contact">
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div class="footer-col">
-
-<h3>
-
-Best IPTV Provider
-
-</h3>
-
-<p>
-
-A comparison website created to help visitors explore IPTV providers, compare features and discover available streaming options.
-
-</p>
-
-</div>
-
-<div class="footer-col">
-
-<h3>
-
-Navigation
-
-</h3>
-
-<a href="/">Home</a>
-
-<a href="#ranking">Ranking</a>
-
-<a href="#compare">Comparison</a>
-
-<a href="#reviews">Reviews</a>
-
-<a href="#faq">FAQ</a>
-
-</div>
-
-<div class="footer-col">
-
-<h3>
-
-Providers
-
-</h3>
-
-<a href="https://tivi-live.com/" target="_blank">Tivi Live</a>
-
-<a href="https://flash4kiptv.com/" target="_blank">Flash4K IPTV</a>
-
-<a href="https://www.zorba.network/" target="_blank">Zorba Network</a>
-
-<a href="https://freegotv.com/" target="_blank">FreeGoTV</a>
-
-<a href="https://tvcorn.com/" target="_blank">TVCorn</a>
-
-</div>
-
-<div class="footer-col">
-
-<h3>
-
-Newsletter
-
-</h3>
-
-<p>
-
-Get updates about new provider listings and website improvements.
-
-</p>
-
-<form class="newsletter">
-
-<input
-type="email"
-placeholder="Your Email">
-
-<button type="submit">
-
-Subscribe
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-
-© 2026 Best IPTV Provider. All Rights Reserved.
-
-</p>
-
-</div>
-
-</div>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Find The <span>Best IPTV</span> Provider</h1>
+          <p>Compare premium IPTV providers - channels, VOD, quality, devices and pricing.</p>
+        </div>
+        <div class="hero-actions">
+          <div class="search-box">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="searchInput" placeholder="Search provider...">
+          </div>
+          <button class="btn btn-primary" onclick="openModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+            Add New
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Bar -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-list">
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+          Live TV
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M7 7h14"/></svg>
+          Movies & Series
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          All Devices
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Fast Streaming
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="main-section">
+    <div class="container">
+      <div class="main-grid">
+        <!-- Providers List -->
+        <div>
+          <h2 class="section-title">Top IPTV Providers <span class="badge">12 Listed</span></h2>
+          <div class="providers-grid" id="providersGrid">
+            <!-- Providers will be rendered here by JS -->
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Comparison Table -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">Quick Comparison</h3>
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>CH</th>
+                  <th>4K</th>
+                  <th>Support</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Tivi Live</td><td>18K+</td><td>Yes</td><td>24/7</td></tr>
+                <tr><td>Flash4K</td><td>20K+</td><td>Yes</td><td>24/7</td></tr>
+                <tr><td>Zorba Net</td><td>15K+</td><td>Yes</td><td>Ticket</td></tr>
+                <tr><td>FreeGoTV</td><td>12K+</td><td>HD</td><td>Email</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Reviews -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">User Reviews</h3>
+            <div class="review-item">
+              <div class="review-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="review-text">Great streaming quality with large channel selection.</p>
+              <p class="review-author">Michael R. - Verified</p>
+            </div>
+            <div class="review-item">
+              <div class="review-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="review-text">Easy setup, smooth viewing, responsive support.</p>
+              <p class="review-author">Sarah L. - Verified</p>
+            </div>
+            <div class="review-item">
+              <div class="review-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-filled"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-empty"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="review-text">Wide channel availability and reliable performance.</p>
+              <p class="review-author">David M. - Verified</p>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">FAQ</h3>
+            <div class="faq-item active">
+              <button class="faq-question">
+                What is IPTV?
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <p class="faq-answer">IPTV delivers television content over internet instead of cable or satellite.</p>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Supported devices?
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <p class="faq-answer">Smart TVs, Android TV, Firestick, Apple TV, MAG devices, Windows, macOS and more.</p>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Live TV & on-demand?
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <p class="faq-answer">Yes, most providers offer live television along with movies and TV series.</p>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                How to compare?
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <p class="faq-answer">Compare by devices, channels, quality, support, pricing and reliability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="cta-text">Compare providers and find the best IPTV service for you</p>
+      <button class="btn btn-gradient" onclick="openModal()">Add New Provider</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Add New IPTV Provider</h3>
+        <button class="modal-close" onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <form id="addProviderForm" onsubmit="handleAddProvider(event)">
+        <div class="form-group">
+          <label class="form-label">Provider Name</label>
+          <input type="text" class="form-input" id="providerName" placeholder="e.g., NewStream TV" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea class="form-input" id="providerDesc" placeholder="Brief description..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Website URL</label>
+          <input type="url" class="form-input" id="providerUrl" placeholder="https://example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Features <span style="color: #64748b">(comma separated)</span></label>
+          <input type="text" class="form-input" id="providerFeatures" placeholder="Live TV, Sports, Movies, HD">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-outline" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn btn-gradient">Add Provider</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Provider Data
+    let providers = [
+      { id: 1, rank: 1, name: 'Tivi Live', desc: 'Live TV channels, sports, entertainment, movies and VOD.', features: ['Live TV', 'Movies & Series', 'Sports', '4K Support'], url: 'https://tivi-live.com/', tier: 'Premium' },
+      { id: 2, rank: 2, name: 'Flash4K IPTV', desc: 'Broad selection of channels, VOD and streaming support.', features: ['Worldwide Channels', 'HD / FHD', 'VOD', 'EPG'], url: 'https://flash4kiptv.com/', tier: 'Premium' },
+      { id: 3, rank: 3, name: 'Zorba Network', desc: 'International live TV channels, sports and movies.', features: ['International Channels', 'Movies & TV', 'Sports', 'HD/FHD'], url: 'https://www.zorba.network/', tier: 'Premium' },
+      { id: 4, rank: 4, name: 'FreeGoTV', desc: 'Live television, entertainment channels and VOD.', features: ['Live Television', 'Movies Library', 'EPG', 'Multi Device'], url: 'https://freegotv.com/', tier: 'Premium' },
+      { id: 5, rank: 5, name: 'TVCorn', desc: 'Live channels, movies, sports and family entertainment.', features: ['Worldwide Channels', 'HD Streaming', 'VOD Library', 'Sports'], url: 'https://tvcorn.com/', tier: 'Premium' },
+      { id: 6, rank: 6, name: 'OTTOcean', desc: 'Live channels, sports events and on-demand content.', features: ['Live IPTV', 'Sports', 'Movies', 'TV Series'], url: 'https://ottocean.com/', tier: 'Premium' },
+      { id: 7, rank: 7, name: 'TrendyScreen', desc: 'Premium entertainment, sports channels and VOD.', features: ['Premium Channels', 'VOD Collection', 'Sports', '4K Ready'], url: 'https://trendyscreen.com/', tier: 'Premium' },
+      { id: 8, rank: 8, name: 'WorthyStream', desc: 'International TV, sports, movies and on-demand.', features: ['International Channels', 'Movies & Series', 'Sports', 'HD/FHD'], url: 'https://worthystream.com/', tier: 'Premium' },
+      { id: 9, rank: 9, name: 'BunnyStream', desc: 'Live TV, sports, entertainment and documentaries.', features: ['Live Television', 'Sports Channels', 'Movies', 'TV Shows'], url: 'https://bunnystream.com/', tier: 'Premium' },
+      { id: 10, rank: 10, name: 'IPTVTune', desc: 'Live TV channels, sports programming and VOD.', features: ['HD Streaming', 'Sports', 'VOD Library', 'TV Guide'], url: 'https://iptvtune.com/', tier: 'Premium' },
+      { id: 11, rank: 11, name: 'TellyStudio', desc: 'Live television, movies, TV shows and entertainment.', features: ['Live Channels', 'Movies', 'TV Series', 'HD Quality'], url: 'https://tellystudio.com/', tier: 'Premium' },
+      { id: 12, rank: 12, name: 'TiviStation', desc: 'Live TV channels, movies, sports and entertainment.', features: ['Worldwide IPTV', 'Movies & Series', 'Sports', 'HD/FHD'], url: 'https://tivistation.com/', tier: 'Premium' },
+    ];
+
+    // Render Providers
+    function renderProviders(filteredProviders = providers) {
+      const grid = document.getElementById('providersGrid');
+      grid.innerHTML = filteredProviders.map(p => `
+        <div class="provider-card">
+          <div class="provider-header">
+            <div class="provider-info">
+              <div class="rank-badge">${p.rank}</div>
+              <span class="provider-name">
+                ${p.name}
+                ${p.rank <= 3 ? '<svg class="award" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>' : ''}
+              </span>
+            </div>
+            <span class="tier-badge">${p.tier}</span>
+          </div>
+          <p class="provider-desc">${p.desc}</p>
+          <div class="provider-features">
+            ${p.features.slice(0, 3).map(f => `<span class="feature-tag">${f}</span>`).join('')}
+          </div>
+          <a href="${p.url}" target="_blank" rel="noopener" class="provider-link">
+            Visit Website <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+          </a>
+        </div>
+      `).join('');
+
+      // Update badge count
+      document.querySelector('.badge').textContent = `${providers.length} Listed`;
+    }
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      const filtered = providers.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        p.desc.toLowerCase().includes(query)
+      );
+      renderProviders(filtered);
+    });
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        document.querySelectorAll('.faq-item').forEach(i => {
+          if (i !== item) i.classList.remove('active');
+        });
+        item.classList.toggle('active');
+      });
+    });
+
+    // Modal Functions
+    function openModal() {
+      document.getElementById('modalOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+      document.getElementById('addProviderForm').reset();
+    }
+
+    // Close modal on overlay click
+    document.getElementById('modalOverlay').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+
+    // Add Provider
+    function handleAddProvider(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('providerName').value;
+      const desc = document.getElementById('providerDesc').value;
+      const url = document.getElementById('providerUrl').value;
+      const featuresInput = document.getElementById('providerFeatures').value;
+      const features = featuresInput.split(',').map(f => f.trim()).filter(Boolean);
+
+      const newProvider = {
+        id: Date.now(),
+        rank: providers.length + 1,
+        name,
+        desc,
+        url,
+        features: features.length ? features : ['IPTV'],
+        tier: 'Premium'
+      };
+
+      providers.push(newProvider);
+      renderProviders();
+      closeModal();
+    }
+
+    // Initial Render
+    renderProviders();
+  </script>
 </body>
-
 </html>
