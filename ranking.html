@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
+ 
   <style>
     /* ============================================
        ROOT VARIABLES & DESIGN SYSTEM
@@ -23,15 +24,15 @@
       --primary-500: #3b82f6;
       --primary-600: #2563eb;
       --primary-700: #1d4ed8;
-
+ 
       --accent-400: #22d3ee;
       --accent-500: #06b6d4;
       --accent-600: #0891b2;
-
+ 
       --emerald-400: #34d399;
       --emerald-500: #10b981;
       --emerald-600: #059669;
-
+ 
       --slate-50: #f8fafc;
       --slate-100: #f1f5f9;
       --slate-200: #e2e8f0;
@@ -43,44 +44,44 @@
       --slate-800: #1e293b;
       --slate-900: #0f172a;
       --slate-950: #020617;
-
+ 
       --bg-primary: #030712;
       --bg-secondary: #0a0f1a;
       --bg-tertiary: #111827;
       --bg-card: rgba(17, 24, 39, 0.8);
       --bg-elevated: rgba(30, 41, 59, 0.6);
-
+ 
       --border-primary: rgba(148, 163, 184, 0.1);
       --border-secondary: rgba(148, 163, 184, 0.15);
       --border-accent: rgba(34, 211, 238, 0.3);
-
+ 
       --text-primary: #f8fafc;
       --text-secondary: #cbd5e1;
       --text-tertiary: #94a3b8;
       --text-muted: #64748b;
-
+ 
       --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
       --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
       --gradient-dark: linear-gradient(180deg, #0a0f1a 0%, #030712 100%);
       --gradient-glow: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
-
+ 
       --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
       --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
       --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
       --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
       --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
-
+ 
       --radius-sm: 6px;
       --radius-md: 10px;
       --radius-lg: 14px;
       --radius-xl: 20px;
       --radius-full: 9999px;
-
+ 
       --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
       --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+ 
     /* ============================================
        RESET & BASE STYLES
     ============================================ */
@@ -89,13 +90,13 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+ 
     html {
       scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
+ 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg-primary);
@@ -106,30 +107,30 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
-
+ 
     a {
       text-decoration: none;
       color: inherit;
       transition: color var(--transition-fast);
     }
-
+ 
     button {
       font-family: inherit;
       cursor: pointer;
       border: none;
       background: none;
     }
-
+ 
     input, textarea {
       font-family: inherit;
       font-size: inherit;
     }
-
+ 
     img {
       max-width: 100%;
       height: auto;
     }
-
+ 
     /* ============================================
        TYPOGRAPHY
     ============================================ */
@@ -138,14 +139,14 @@
       font-weight: 700;
       letter-spacing: -0.02em;
     }
-
+ 
     .text-gradient {
       background: var(--gradient-primary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
+ 
     /* ============================================
        LAYOUT
     ============================================ */
@@ -155,11 +156,11 @@
       margin: 0 auto;
       padding: 0 clamp(16px, 4vw, 40px);
     }
-
+ 
     .section {
       padding: clamp(24px, 5vw, 48px) 0;
     }
-
+ 
     /* ============================================
        HERO SECTION
     ============================================ */
@@ -169,7 +170,7 @@
       border-bottom: 1px solid var(--border-primary);
       position: relative;
     }
-
+ 
     .hero::before {
       content: '';
       position: absolute;
@@ -181,7 +182,7 @@
       background: radial-gradient(ellipse, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
       pointer-events: none;
     }
-
+ 
     .hero-content {
       display: flex;
       flex-wrap: wrap;
@@ -190,33 +191,33 @@
       gap: 20px;
       position: relative;
     }
-
+ 
     .hero-text h1 {
       font-size: clamp(28px, 4vw, 42px);
       line-height: 1.1;
       margin-bottom: 8px;
     }
-
+ 
     .hero-text .subtitle {
       color: var(--text-tertiary);
       font-size: clamp(13px, 1.5vw, 15px);
       max-width: 480px;
     }
-
+ 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
     }
-
+ 
     /* ============================================
        SEARCH COMPONENT
     ============================================ */
     .search-wrapper {
       position: relative;
     }
-
+ 
     .search-input {
       width: 260px;
       padding: 12px 16px 12px 44px;
@@ -228,20 +229,20 @@
       outline: none;
       transition: all var(--transition-normal);
     }
-
+ 
     .search-input:hover {
       border-color: var(--border-secondary);
     }
-
+ 
     .search-input:focus {
       border-color: var(--accent-400);
       box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
     }
-
+ 
     .search-input::placeholder {
       color: var(--text-muted);
     }
-
+ 
     .search-icon {
       position: absolute;
       left: 14px;
@@ -252,7 +253,7 @@
       color: var(--text-muted);
       pointer-events: none;
     }
-
+ 
     /* ============================================
        BUTTON SYSTEM
     ============================================ */
@@ -268,51 +269,51 @@
       transition: all var(--transition-normal);
       white-space: nowrap;
     }
-
+ 
     .btn-primary {
       background: var(--gradient-accent);
       color: var(--bg-primary);
       box-shadow: 0 4px 14px rgba(34, 211, 238, 0.25);
     }
-
+ 
     .btn-primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(34, 211, 238, 0.35);
     }
-
+ 
     .btn-primary:active {
       transform: translateY(0);
     }
-
+ 
     .btn-secondary {
       background: var(--gradient-primary);
       color: white;
       box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
     }
-
+ 
     .btn-secondary:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
     }
-
+ 
     .btn-ghost {
       background: transparent;
       border: 1px solid var(--border-secondary);
       color: var(--text-secondary);
     }
-
+ 
     .btn-ghost:hover {
       background: var(--bg-elevated);
       border-color: var(--border-accent);
       color: var(--text-primary);
     }
-
+ 
     .btn-icon {
       width: 18px;
       height: 18px;
       flex-shrink: 0;
     }
-
+ 
     /* ============================================
        FEATURES STRIP
     ============================================ */
@@ -321,14 +322,14 @@
       background: var(--bg-secondary);
       border-bottom: 1px solid var(--border-primary);
     }
-
+ 
     .features-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: clamp(24px, 4vw, 48px);
     }
-
+ 
     .feature-item {
       display: flex;
       align-items: center;
@@ -337,13 +338,13 @@
       font-size: 13px;
       font-weight: 500;
     }
-
+ 
     .feature-icon {
       width: 20px;
       height: 20px;
       color: var(--accent-400);
     }
-
+ 
     /* ============================================
        MAIN CONTENT GRID
     ============================================ */
@@ -352,20 +353,20 @@
       grid-template-columns: 1fr;
       gap: 24px;
     }
-
+ 
     @media (min-width: 1100px) {
       .content-grid {
         grid-template-columns: 1fr 380px;
       }
     }
-
+ 
     /* ============================================
        SECTION HEADERS
     ============================================ */
     .section-header {
       margin-bottom: 20px;
     }
-
+ 
     .section-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(18px, 2.5vw, 22px);
@@ -375,7 +376,7 @@
       align-items: center;
       gap: 12px;
     }
-
+ 
     .section-badge {
       background: var(--gradient-primary);
       color: white;
@@ -384,13 +385,13 @@
       font-size: 12px;
       font-weight: 600;
     }
-
+ 
     .section-subtitle {
       color: var(--text-tertiary);
       font-size: 13px;
       margin-top: 6px;
     }
-
+ 
     /* ============================================
        PROVIDER CARDS GRID
     ============================================ */
@@ -399,7 +400,7 @@
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 16px;
     }
-
+ 
     .provider-card {
       background: var(--bg-card);
       border: 1px solid var(--border-primary);
@@ -409,7 +410,7 @@
       position: relative;
       overflow: hidden;
     }
-
+ 
     .provider-card::before {
       content: '';
       position: absolute;
@@ -421,30 +422,30 @@
       opacity: 0;
       transition: opacity var(--transition-normal);
     }
-
+ 
     .provider-card:hover {
       border-color: var(--border-accent);
       transform: translateY(-3px);
       box-shadow: var(--shadow-xl), var(--shadow-glow);
     }
-
+ 
     .provider-card:hover::before {
       opacity: 1;
     }
-
+ 
     .provider-header {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 12px;
     }
-
+ 
     .provider-identity {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
+ 
     .rank-indicator {
       width: 28px;
       height: 28px;
@@ -458,12 +459,12 @@
       color: white;
       box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
     }
-
+ 
     .rank-indicator.top-3 {
       background: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
       box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
     }
-
+ 
     .provider-name {
       font-weight: 700;
       font-size: 15px;
@@ -472,13 +473,13 @@
       align-items: center;
       gap: 6px;
     }
-
+ 
     .verified-badge {
       color: #f59e0b;
       width: 16px;
       height: 16px;
     }
-
+ 
     .tier-label {
       background: rgba(139, 92, 246, 0.15);
       color: #a78bfa;
@@ -489,7 +490,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
+ 
     .provider-description {
       color: var(--text-tertiary);
       font-size: 13px;
@@ -500,14 +501,14 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-
+ 
     .features-list {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin-bottom: 16px;
     }
-
+ 
     .feature-chip {
       background: var(--bg-elevated);
       color: var(--text-secondary);
@@ -516,7 +517,7 @@
       font-size: 11px;
       font-weight: 500;
     }
-
+ 
     .provider-footer {
       display: flex;
       align-items: center;
@@ -524,7 +525,7 @@
       padding-top: 14px;
       border-top: 1px solid var(--border-primary);
     }
-
+ 
     .provider-link {
       color: var(--accent-400);
       font-size: 13px;
@@ -534,21 +535,40 @@
       gap: 6px;
       transition: color var(--transition-fast);
     }
-
+ 
     .provider-link:hover {
       color: var(--accent-500);
     }
-
+ 
     .provider-link svg {
       width: 14px;
       height: 14px;
       transition: transform var(--transition-fast);
     }
-
+ 
     .provider-link:hover svg {
       transform: translateX(2px);
     }
-
+ 
+    .provider-remove {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color var(--transition-fast);
+    }
+ 
+    .provider-remove:hover {
+      color: #f87171;
+    }
+ 
+    .provider-remove svg {
+      width: 13px;
+      height: 13px;
+    }
+ 
     /* ============================================
        SIDEBAR
     ============================================ */
@@ -557,14 +577,14 @@
       flex-direction: column;
       gap: 20px;
     }
-
+ 
     .sidebar-card {
       background: var(--bg-card);
       border: 1px solid var(--border-primary);
       border-radius: var(--radius-xl);
       padding: 20px;
     }
-
+ 
     .sidebar-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 16px;
@@ -574,7 +594,7 @@
       padding-bottom: 12px;
       border-bottom: 1px solid var(--border-primary);
     }
-
+ 
     /* ============================================
        COMPARISON TABLE
     ============================================ */
@@ -583,7 +603,7 @@
       border-collapse: collapse;
       font-size: 13px;
     }
-
+ 
     .comparison-table th {
       text-align: left;
       font-weight: 600;
@@ -593,34 +613,34 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
+ 
     .comparison-table th:not(:first-child) {
       text-align: center;
     }
-
+ 
     .comparison-table td {
       padding: 12px 8px;
       color: var(--text-secondary);
       border-top: 1px solid var(--border-primary);
     }
-
+ 
     .comparison-table td:not(:first-child) {
       text-align: center;
     }
-
+ 
     .comparison-table tbody tr {
       transition: background var(--transition-fast);
     }
-
+ 
     .comparison-table tbody tr:hover {
       background: var(--bg-elevated);
     }
-
+ 
     .table-highlight {
       color: var(--emerald-400);
       font-weight: 600;
     }
-
+ 
     /* ============================================
        REVIEWS
     ============================================ */
@@ -630,49 +650,49 @@
       padding: 16px;
       margin-bottom: 12px;
     }
-
+ 
     .review-card:last-child {
       margin-bottom: 0;
     }
-
+ 
     .review-rating {
       display: flex;
       gap: 3px;
       margin-bottom: 8px;
     }
-
+ 
     .star-icon {
       width: 14px;
       height: 14px;
     }
-
+ 
     .star-filled {
       color: #fbbf24;
       fill: #fbbf24;
     }
-
+ 
     .star-empty {
       color: var(--slate-600);
     }
-
+ 
     .review-content {
       color: var(--text-secondary);
       font-size: 13px;
       line-height: 1.5;
       margin-bottom: 10px;
     }
-
+ 
     .review-author {
       font-size: 12px;
       font-weight: 600;
       color: var(--text-tertiary);
     }
-
+ 
     .verified-text {
       color: var(--emerald-500);
       font-weight: 500;
     }
-
+ 
     /* ============================================
        FAQ ACCORDION
     ============================================ */
@@ -680,12 +700,12 @@
       padding: 14px 0;
       border-bottom: 1px solid var(--border-primary);
     }
-
+ 
     .faq-item:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
-
+ 
     .faq-trigger {
       width: 100%;
       display: flex;
@@ -698,39 +718,39 @@
       padding: 0;
       transition: color var(--transition-fast);
     }
-
+ 
     .faq-trigger:hover {
       color: var(--accent-400);
     }
-
+ 
     .faq-icon {
       width: 16px;
       height: 16px;
       color: var(--text-muted);
       transition: transform var(--transition-normal);
     }
-
+ 
     .faq-item.active .faq-icon {
       transform: rotate(180deg);
     }
-
+ 
     .faq-content {
       max-height: 0;
       overflow: hidden;
       transition: max-height var(--transition-normal);
     }
-
+ 
     .faq-item.active .faq-content {
       max-height: 200px;
     }
-
+ 
     .faq-answer {
       padding-top: 12px;
       color: var(--text-tertiary);
       font-size: 13px;
       line-height: 1.6;
     }
-
+ 
     /* ============================================
        CTA SECTION
     ============================================ */
@@ -740,14 +760,14 @@
       border-top: 1px solid var(--border-primary);
       text-align: center;
     }
-
+ 
     .cta-text {
       color: var(--text-tertiary);
       font-size: 14px;
       max-width: 500px;
       margin: 0 auto 16px;
     }
-
+ 
     /* ============================================
        MODAL SYSTEM
     ============================================ */
@@ -764,12 +784,12 @@
       opacity: 0;
       transition: opacity var(--transition-normal);
     }
-
+ 
     .modal-backdrop.active {
       display: flex;
       opacity: 1;
     }
-
+ 
     .modal-container {
       background: var(--slate-900);
       border: 1px solid var(--border-secondary);
@@ -781,24 +801,24 @@
       transform: scale(0.95) translateY(10px);
       transition: transform var(--transition-normal);
     }
-
+ 
     .modal-backdrop.active .modal-container {
       transform: scale(1) translateY(0);
     }
-
+ 
     .modal-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 24px;
     }
-
+ 
     .modal-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 20px;
       font-weight: 700;
     }
-
+ 
     .modal-close {
       width: 36px;
       height: 36px;
@@ -809,24 +829,24 @@
       color: var(--text-muted);
       transition: all var(--transition-fast);
     }
-
+ 
     .modal-close:hover {
       background: var(--bg-elevated);
       color: var(--text-primary);
     }
-
+ 
     .modal-close svg {
       width: 20px;
       height: 20px;
     }
-
+ 
     /* ============================================
        FORM ELEMENTS
     ============================================ */
     .form-group {
       margin-bottom: 18px;
     }
-
+ 
     .form-label {
       display: block;
       font-size: 13px;
@@ -834,12 +854,12 @@
       color: var(--text-secondary);
       margin-bottom: 8px;
     }
-
+ 
     .form-label .label-hint {
       color: var(--text-muted);
       font-weight: 400;
     }
-
+ 
     .form-control {
       width: 100%;
       padding: 12px 14px;
@@ -851,35 +871,35 @@
       outline: none;
       transition: all var(--transition-fast);
     }
-
+ 
     .form-control:hover {
       border-color: var(--border-secondary);
     }
-
+ 
     .form-control:focus {
       border-color: var(--accent-400);
       box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
     }
-
+ 
     .form-control::placeholder {
       color: var(--text-muted);
     }
-
+ 
     textarea.form-control {
       min-height: 80px;
       resize: vertical;
     }
-
+ 
     .form-actions {
       display: flex;
       gap: 12px;
       margin-top: 28px;
     }
-
+ 
     .form-actions .btn {
       flex: 1;
     }
-
+ 
     /* ============================================
        RESPONSIVE BREAKPOINTS
     ============================================ */
@@ -888,38 +908,38 @@
         flex-direction: column;
         text-align: center;
       }
-
+ 
       .hero-text {
         width: 100%;
       }
-
+ 
       .hero-text .subtitle {
         margin: 0 auto;
       }
-
+ 
       .hero-actions {
         width: 100%;
         justify-content: center;
       }
-
+ 
       .search-input {
         width: 100%;
       }
-
+ 
       .providers-grid {
         grid-template-columns: 1fr;
       }
     }
-
+ 
     @media (max-width: 480px) {
       .btn {
         width: 100%;
       }
-
+ 
       .hero-actions {
         flex-direction: column;
       }
-
+ 
       .form-actions {
         flex-direction: column;
       }
@@ -948,7 +968,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- Features Strip -->
   <section class="features-strip">
     <div class="container">
@@ -972,7 +992,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- Main Content -->
   <section class="section">
     <div class="container">
@@ -990,7 +1010,7 @@
             <!-- Dynamically rendered -->
           </div>
         </div>
-
+ 
         <!-- Sidebar Column -->
         <aside class="sidebar">
           <!-- Quick Comparison -->
@@ -1013,7 +1033,7 @@
               </tbody>
             </table>
           </div>
-
+ 
           <!-- User Reviews -->
           <div class="sidebar-card">
             <h3 class="sidebar-title">Client Testimonials</h3>
@@ -1051,7 +1071,7 @@
               <p class="review-author">David Mitchell <span class="verified-text">Verified</span></p>
             </div>
           </div>
-
+ 
           <!-- FAQ -->
           <div class="sidebar-card">
             <h3 class="sidebar-title">Common Questions</h3>
@@ -1098,7 +1118,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
@@ -1106,7 +1126,7 @@
       <button class="btn btn-secondary" onclick="openModal()">Submit New Provider</button>
     </div>
   </section>
-
+ 
   <!-- Modal -->
   <div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOnBackdrop(event)">
     <div class="modal-container">
@@ -1140,9 +1160,15 @@
       </form>
     </div>
   </div>
-
+ 
   <script>
-    // Provider dataset
+    // ============================================
+    // PERSISTENCE LAYER (localStorage)
+    // ============================================
+    // Yeh key browser ke localStorage mein use hogi
+    const STORAGE_KEY = 'iptv_directory_custom_providers';
+ 
+    // Original 12 (built-in) providers - yeh hamesha fixed rahenge
     const providersData = [
       {
         id: 1,
@@ -1253,17 +1279,39 @@
         tier: 'Premium'
       }
     ];
-
-    let providers = [...providersData];
-
+ 
+    // localStorage se saved custom providers load karna (agar koi hai)
+    function loadCustomProviders() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        return saved ? JSON.parse(saved) : [];
+      } catch (err) {
+        console.error('Saved listings load nahi ho payi:', err);
+        return [];
+      }
+    }
+ 
+    // Custom providers ko localStorage mein save karna
+    function saveCustomProviders(customList) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(customList));
+      } catch (err) {
+        console.error('Listing save karne mein error aaya:', err);
+        alert('Listing save nahi ho payi. Browser storage full ya disabled ho sakta hai.');
+      }
+    }
+ 
+    // Final providers list = original 12 + jo bhi user ne add kiye hain (saved wale)
+    let providers = [...providersData, ...loadCustomProviders()];
+ 
     // Render providers grid
     function renderProviders(data = providers) {
       const container = document.getElementById('providersGrid');
       const countBadge = document.getElementById('providerCount');
-
+ 
       countBadge.textContent = `${data.length} Listed`;
-
-      container.innerHTML = data.map((provider, index) => `
+ 
+      container.innerHTML = data.map((provider) => `
         <article class="provider-card">
           <div class="provider-header">
             <div class="provider-identity">
@@ -1284,11 +1332,16 @@
               View Details
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
             </a>
+            ${provider.isCustom ? `
+            <button type="button" class="provider-remove" onclick="removeProvider(${provider.id})">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+              Remove
+            </button>` : ''}
           </div>
         </article>
       `).join('');
     }
-
+ 
     // Search functionality
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', (e) => {
@@ -1297,62 +1350,62 @@
         renderProviders();
         return;
       }
-
+ 
       const filtered = providers.filter(p =>
         p.name.toLowerCase().includes(query) ||
         p.description.toLowerCase().includes(query) ||
         p.features.some(f => f.toLowerCase().includes(query))
       );
-
+ 
       renderProviders(filtered);
     });
-
+ 
     // FAQ accordion
     function toggleFaq(trigger) {
       const item = trigger.parentElement;
       const isActive = item.classList.contains('active');
-
+ 
       // Close all items
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-
+ 
       // Open clicked item if it wasn't active
       if (!isActive) {
         item.classList.add('active');
       }
     }
-
+ 
     // Modal functions
     function openModal() {
       document.getElementById('modalBackdrop').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
-
+ 
     function closeModal() {
       document.getElementById('modalBackdrop').classList.remove('active');
       document.body.style.overflow = '';
       document.getElementById('providerForm').reset();
     }
-
+ 
     function closeModalOnBackdrop(event) {
       if (event.target === event.currentTarget) {
         closeModal();
       }
     }
-
+ 
     // Form submission
     function handleSubmit(event) {
       event.preventDefault();
-
+ 
       const name = document.getElementById('inputName').value.trim();
       const description = document.getElementById('inputDescription').value.trim();
       const website = document.getElementById('inputWebsite').value.trim();
       const featuresInput = document.getElementById('inputFeatures').value.trim();
-
+ 
       const features = featuresInput
         .split(',')
         .map(f => f.trim())
         .filter(f => f.length > 0);
-
+ 
       const newProvider = {
         id: Date.now(),
         rank: providers.length + 1,
@@ -1360,23 +1413,41 @@
         description,
         website,
         features: features.length > 0 ? features : ['Streaming Services'],
-        tier: 'Premium'
+        tier: 'Premium',
+        isCustom: true // yeh flag batata hai ki yeh user-added listing hai
       };
-
+ 
       providers.push(newProvider);
       renderProviders();
+ 
+      // Sirf custom (user-added) providers ko localStorage mein save karna
+      const customOnly = providers.filter(p => p.isCustom);
+      saveCustomProviders(customOnly);
+ 
       closeModal();
     }
-
+ 
+    // User-added listing ko remove karna
+    function removeProvider(id) {
+      if (!confirm('Kya aap is listing ko hatana chahte hain?')) return;
+ 
+      providers = providers.filter(p => p.id !== id);
+      renderProviders();
+ 
+      const customOnly = providers.filter(p => p.isCustom);
+      saveCustomProviders(customOnly);
+    }
+ 
     // Keyboard accessibility
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && document.getElementById('modalBackdrop').classList.contains('active')) {
         closeModal();
       }
     });
-
+ 
     // Initialize
     renderProviders();
   </script>
 </body>
 </html>
+ 
